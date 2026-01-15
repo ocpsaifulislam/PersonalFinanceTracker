@@ -134,4 +134,5 @@ public class FinanceTrackerApp {
         System.out.println("6. Exit");
         System.out.print("Choose option: ");
     }
+    
 }
