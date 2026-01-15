@@ -43,10 +43,6 @@ public class Transaction {
     }
 
     // Setters
-    public void setId(String id) {
-        this.id = id;
-    }
-
     public void setType(String type) {
         if (type.equalsIgnoreCase("INCOME") || type.equalsIgnoreCase("EXPENSE")) {
             this.type = type.toUpperCase();

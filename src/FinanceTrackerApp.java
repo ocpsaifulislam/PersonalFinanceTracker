@@ -68,11 +68,9 @@ public class FinanceTrackerApp {
             return;
         }
 
-//        System.out.println("\nID | TYPE | AMOUNT | DESCRIPTION | DATE");
         System.out.printf("%-5s| %-10s| %-10s| %-20s| %-12s\n", "ID", "Type", "Amount", "Description", "Date");
 
         for (Transaction t : transactions) {
-//             System.out.printf("%s | %s | %.2f | %s | %s%n",
             System.out.printf("%-5s| %-10s| %-10s| %-20s| %-12s\n",
                     t.getId(), t.getType(), t.getAmount(),
                     t.getDescription(), t.getDate());
@@ -134,5 +132,5 @@ public class FinanceTrackerApp {
         System.out.println("6. Exit");
         System.out.print("Choose option: ");
     }
-    
+
 }
