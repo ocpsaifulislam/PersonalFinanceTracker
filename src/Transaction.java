@@ -2,15 +2,12 @@ import java.time.LocalDate;
 import java.util.Scanner;
 
 public class Transaction {
-    private String id; //immutable and unique
+    private final String id; //immutable and unique
     private String type;  // INCOME or EXPENSE
     private double amount;  // positive
     private String description;
     private String date;  // YYYY-MM-DD
 
-    // No-Args Constructor
-    public Transaction() {
-    }
 
     // All-Args Constructor
     public Transaction(String id, String type, double amount, String description, String date) {
